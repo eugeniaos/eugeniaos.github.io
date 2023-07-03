@@ -1,0 +1,1020 @@
+/**
+* Template Name: Lumia
+* Updated: May 30 2023 with Bootstrap v5.3.0
+* Template URL: https://bootstrapmade.com/lumia-bootstrap-business-template/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+
+body {
+  font-family: "Open Sans", sans-serif;
+  color: #FFF;
+}
+
+a {
+  color: #EDB829;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFF;
+  text-decoration: none;
+}
+
+
+h1,
+h2 {
+   font-family: 'Sofia Sans Condensed', sans-serif;
+    font-style: italic;
+}
+
+
+/*--------------------------------------------------------------
+# BOTON DE SUBIDA
+--------------------------------------------------------------*/
+
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: #666;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: #EDB829;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+/*--------------------------------------------------------------
+# BARRA Y LOGO
+--------------------------------------------------------------*/
+
+#header {
+  height: 55px;
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  background: #EDB829;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#header .logo img {
+  max-height: 25px;
+}
+
+
+/*--------------------------------------------------------------
+# BARRA
+--------------------------------------------------------------*/
+
+/**
+* LAPTOP
+*/
+.navbar {
+  padding: 0;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a,
+.navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  font-size: 18px;
+  color: #333;
+  white-space: nowrap;
+  transition: 0.3s;
+    font-weight: 600;
+}
+
+.navbar a i,
+.navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover,
+.navbar .active,
+.navbar .active:focus,
+.navbar li:hover>a {
+  color: #000;
+}
+
+
+/**
+* TELEFONO
+*/
+
+.mobile-nav-toggle {
+  color: #666;
+  font-size: 35px;
+  cursor: pointer;
+  display: none;
+  line-height: 0;
+  transition: 0.5s;
+}
+
+.mobile-nav-toggle.bi-x {
+  color: #333;
+}
+
+@media (max-width: 991px) {
+  .mobile-nav-toggle {
+    display: block;
+  }
+
+  .navbar ul {
+    display: none;
+  }
+}
+
+.navbar-mobile {
+  position: fixed;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: rgba(33, 38, 42, 0.9);
+  transition: 0.3s;
+  z-index: 999;
+}
+
+.navbar-mobile .mobile-nav-toggle {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+.navbar-mobile ul {
+  display: block;
+  position: absolute;
+  top: 55px;
+  right: 15px;
+  bottom: 15px;
+  left: 15px;
+  padding: 10px 0;
+  background-color: #EDB829;
+  overflow-y: auto;
+  transition: 0.3s;
+}
+
+.navbar-mobile a,
+.navbar-mobile a:focus {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: #FFF;
+}
+
+.navbar-mobile a:hover,
+.navbar-mobile .active,
+.navbar-mobile li:hover>a {
+  color: #333;
+}
+
+
+/*--------------------------------------------------------------
+# PORTADA
+--------------------------------------------------------------*/
+
+#hero {
+  width: 100%;
+  height: 555px;
+  background: url("../img/Hero.jpg") center center;
+  background-size: cover;
+  position: relative;
+  margin-top: 55px;
+  padding: 0;
+}
+
+
+#hero .container {
+  z-index: 2;
+}
+
+#hero h1 {
+  margin: 0 0 -27px 0;
+  font-size: 30px;
+  color: #EDB829;
+  text-align:left;
+}
+
+
+#hero h2 {
+  color: #fff;
+  margin-bottom: -50px;
+  font-size: 115px;
+font-feature-settings: normal;
+  text-align: left;
+}
+
+@media (max-width: 992px) {
+  #hero {
+    height: 645px;
+      
+  }
+    
+    #hero:before {
+  content: "";
+  background: rgba(51, 51, 1, 0.);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+    
+    #hero { 
+  background: url("../img/Hero.jpg") center center;
+  background-size: cover;
+  position: relative;
+
+}
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 20px;
+    line-height: 80px;
+      position: relative;
+     top: 90px;  
+  }
+
+  #hero h2 {
+    font-size: 60px;
+    line-height: 38px;
+    margin-bottom: 10px;
+      position: relative;
+       top: 90px;
+  }
+    
+    #about .col-lg-6 img { 
+ height: 600px;
+    padding-left: 0px;    
+    }
+    
+    #about h2 {
+  font-weight: 600;
+  font-size: 50px;
+    padding-top: 75px;
+    color: #fff;
+    }
+    
+   #what-we-do h2 {
+  font-weight: 600;
+  font-size: 50px;
+    padding-top: 10px;
+    color: #fff;
+       line-height: 45px;
+    }
+    
+    #team h2 {
+  font-weight: 600;
+  font-size: 50px;
+    padding-top: 10px;
+    color: #fff;
+       line-height: 45px;
+    }
+    
+    #hero:before {
+  content: "";
+  background: rgba(51, 51, 1, 0.5);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+    #about h2{
+  position: relative;
+        bottom: 0px;
+            padding: 0px;
+}
+}
+/*--------------------------------------------------------------
+# GENERAL
+--------------------------------------------------------------*/
+
+section {
+  padding: 90px 0;
+}
+
+
+.section-bg {
+  background-color: #333333;
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: px;
+}
+
+.section-title h2 {
+  font-size: 65px;
+  font-weight: 600;
+  position: relative;
+   
+}
+
+.section-title p {
+  margin-bottom:-15PX;
+    font-size: 30px;
+      font-weight: 500;
+}
+
+/*--------------------------------------------------------------
+# CAT INTELLIGENCE
+--------------------------------------------------------------*/
+.about {
+  padding: 50px 0PX 0PX 0PX;
+}
+
+.about h2 {
+  font-weight: 600;
+  font-size: 70px;
+    padding-top: 75px;
+    color: #fff;
+}
+
+.about ul {
+  list-style: none;
+  padding: 0;
+  font-size: 23px;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    font-weight: 600;
+}
+
+.about ul li+li {
+  margin-top: 5px;
+}
+
+.about ul li {
+  position: relative;
+  padding-left: 0px;
+    color: #333;
+}
+
+.about ul i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 27px;
+  color: #000;
+}
+
+.col-lg-6 img { 
+ height: 600px;
+    padding-left: 70px;    
+    }
+
+.about p {
+    font-size: 24px;
+    color: #333;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+     line-height: 30px;
+}
+
+.about {
+    background: linear-gradient(to bottom right, #EDB829 40%, #F6D000);
+}
+
+.about p span{
+    font-weight: 600;
+}
+
+
+/*--------------------------------------------------------------
+# SEPARADOR
+--------------------------------------------------------------*/
+#hero2 {
+  width: 100%;
+  height: 300PX;
+  background: url("../img/Corte.jpg") center center;
+  background-size: cover;
+  position: relative;
+  padding: 0;
+}
+
+#hero2:before {
+  content: "";
+  background: rgba(51, 51, 1, 0.5);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+#hero2 .container {
+  z-index: 2;
+}
+
+
+#hero2 h2 {
+  color: #fff;
+  margin-bottom: -73px;
+  font-size: 88px;
+font-feature-settings: normal;
+  text-align: left;
+    padding-top: 30px;
+}
+
+
+
+
+@media (max-width: 992px) {
+  #hero2 {
+    height: 160px;
+  }
+}
+
+@media (max-width: 768px) {
+    
+  #hero2 h2 {
+    font-size: 30px;
+    line-height: 0px;
+    margin-bottom: 0px;
+      padding-top: 22px;
+       position: relative;
+      top: 35px;
+  }
+    #what-we-do .container1 p {
+    font-size: 22px;
+    color: #fff;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+     line-height: 26px;
+    text-align: center;
+}
+    #what-we-do .container2 h3 {
+  font-weight: 500;
+  font-size: 30px;
+    color: #EDB829;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    padding-top: 0px;
+    font-style: italic;
+         text-align: center;
+         position: relative;
+      bottom: 280px;
+}
+
+#what-we-do .container2 h4 {
+  font-weight: 500;
+  font-size: 25px;
+    color: #FFF;
+     position: relative;
+      bottom: 280px;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    text-align: center; 
+    padding-top: 10px
+   
+    
+}
+    #what-we-do .container2 p {
+    font-size: 22px;
+    color: #fff;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    line-height: 25px;
+        text-align: center;
+        position: relative;
+      bottom: 280px;
+    }
+    
+    
+    
+     #what-we-do .container1 h3 {
+  font-weight: 500;
+  font-size: 30px;
+    color: #EDB829;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    text-align: center;
+    font-style: italic;
+    padding-top: 0px   
+}
+    #what-we-do .container1 h4 {
+  font-weight: 500;
+  font-size: 25px;
+    color: #FFF;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    text-align: center;
+     padding-top: 10px
+}
+    
+    #what-we-do .container1 .col-lg-6 img { 
+ height: 290px;
+    padding-left: 10px; 
+        justify-content: center
+        
+    }
+    
+    #what-we-do .container2 .col-lg-6 img { 
+ height: 290px;
+        padding-left: 11px;
+        position: relative;
+      top: 270px;
+}
+    #what-we-do .container1 {
+  padding: 0px 0PX 70PX 0PX;
+}
+    #what-we-do .container2 {
+  padding: 0px 0PX 70PX 0PX;
+}
+    
+}
+
+
+/*--------------------------------------------------------------
+# TODO LO QUE BUSCAS 1 Y 3
+--------------------------------------------------------------*/
+
+.what-we-do {
+    background: #333333;
+    padding: 50px 0PX 50PX 0PX;
+}
+
+.what-we-do .section-title p{
+     font-family: 'Sofia Sans Condensed', sans-serif;
+    font-size: 30px;   
+}
+
+.what-we-do .container1 {
+  padding: 50px 0PX 45PX 0PX;
+}
+
+.what-we-do .container1 h3 {
+  font-weight: 500;
+  font-size: 40px;
+    color: #EDB829;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    text-align: right;
+    font-style: italic;
+    padding-top: 20px       
+}
+
+.what-we-do .container1 h4 {
+  font-weight: 500;
+  font-size: 30px;
+    color: #FFF;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    text-align: right;
+     padding-top: 10px 
+}
+
+.what-we-do .container1 ul {
+  list-style: none;
+  padding: 0;
+  font-size: 23px;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    text-align: right;
+}
+
+.what-we-do .container1 ul li+li {
+  margin-top: 5px;  
+}
+
+.what-we-do .container1 ul li {
+  position: relative;
+  padding-left: 30px;
+    color: #fff; 
+}
+
+.what-we-do .container1 ul i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 27px;
+  color: #fff;  
+}
+
+.what-we-do .container1 .col-lg-6 img { 
+ height: 290px;
+    padding-left: 70px;    
+    }
+
+.what-we-do .container1 p {
+    font-size: 26px;
+    color: #fff;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+     line-height: 32px;
+    text-align: right;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# TODO LO QUE BUSCAS 2
+--------------------------------------------------------------*/
+
+.what-we-do .container2 {
+  padding: 50px 0PX 50PX 0PX;
+}
+
+.what-we-do .container2 h3 {
+  font-weight: 500;
+  font-size: 40px;
+    color: #EDB829;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    padding-top: 20px;
+    font-style: italic;
+}
+
+.what-we-do .container2 h4 {
+  font-weight: 500;
+  font-size: 30px;
+    color: #FFF;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    text-align: r; 
+    padding-top: 10px
+}
+
+.what-we-do .container2 ul {
+  list-style: none;
+  padding: 0;
+  font-size: 23px;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+.what-we-do .container2 ul li+li {
+  margin-top: 5px;
+}
+
+.what-we-do .container2 ul li {
+  position: relative;
+  padding-left: 30px;
+    color: #fff;
+}
+
+.what-we-do .container2 ul i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 27px;
+  color: #fff;
+}
+
+.what-we-do .container2 .col-lg-6 img { 
+ height: 290px;
+   
+}
+
+.what-we-do .container2 p {
+    font-size: 26px;
+    color: #fff;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+    line-height: 32px;
+    
+}
+
+
+
+/*--------------------------------------------------------------
+# CARACTERISTICAS
+--------------------------------------------------------------*/
+
+.what-we-do2 .icon-box {
+  text-align: center;
+  padding: 10px 20px;
+  transition: all ease-in-out 0.3s;
+}
+
+.what-we-do2 .icon-box .icon {
+  margin: 0 auto;
+  width: 50px;
+  height: 60px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  transition: ease-in-out 0.3s;
+}
+
+.what-we-do2 .icon-box .icon i {
+  color: #666;
+  font-size: 28px;
+}
+
+.what-we-do2  .icon-box h4 {
+  font-weight: 600;
+  margin-bottom: 0px;
+  font-size: 24px;
+    font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+.what-we-do2 .icon-box h4 a {
+  color: #333;
+  transition: ease-in-out 0.3s;
+}
+
+.what-we-do2 .icon-box p {
+  line-height: 22px;
+  font-size: 14px;
+  margin-top: 8px;
+    margin-bottom: 0px;
+    color: #000;
+    font-weight: 600;  
+}
+
+.what-we-do2 .icon-box:hover {
+  border-color: #f2f2f2;
+  box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+}
+
+.what-we-do2 .icon-box:hover h4 a,
+.what-we-do2 .icon-box:hover .icon i {
+  color: #000;
+}
+
+.what-we-do2 .section-title p{
+     font-family: 'Sofia Sans Condensed', sans-serif;
+    font-size: 30px;
+}
+
+.what-we-do2 .row h3{
+     font-family: 'Sofia Sans Condensed', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+.what-we-do2{
+    background: linear-gradient(to bottom right, #EDB829 10%, #F6D000 ); 
+}
+
+.what-we-do2 {
+    padding: 40px 0PX 40PX 0PX;
+}
+
+
+/*--------------------------------------------------------------
+# ACCESORIOS
+--------------------------------------------------------------*/
+
+.team .member {
+  text-align: center;
+  margin-bottom: px;
+  box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+  padding: 15px 20px;
+  background: #333;
+}
+
+.team .member img {
+  max-width: 60%;
+  border-radius: 50%;
+  margin: 15px 0 25px 0;
+}
+
+.team .member h4 {
+  font-weight: 600;
+  margin-bottom: 2px;
+  font-size: 24px;
+  color: #EDB829;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+.team .member span {
+  display: block;
+  font-size: 13px;
+}
+
+.team .member p {
+  font-size: 15px;
+  color: #fff;
+}
+
+.team {
+    background: #333;
+}
+
+.team .section-title p{
+     font-family: 'Sofia Sans Condensed', sans-serif;
+    font-size: 30px;   
+}
+
+.team .section-title {
+     padding-bottom: 20px;   
+}
+
+.team{
+    padding: 50px
+}
+
+/*--------------------------------------------------------------
+# FOOTER
+--------------------------------------------------------------*/
+
+#footer {
+  color: #444444;
+  font-size: 14px;
+  background: #f7fbfe;
+}
+
+#footer .footer-top {
+  padding: 40px 0 0PX 0;
+  background: linear-gradient(to bottom right, #EDB829 10%, #F6D000 );;
+}
+
+#footer .footer-top .footer-contact h4 {
+  font-size: 22px;
+  margin: 0 0 30px 0;
+  padding: 2px 0 2px 0;
+  line-height: 1;
+  font-weight: 700;
+}
+
+#footer .footer-top .footer-contact p {
+  font-size: 19px;
+  line-height: 24px;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+  color: #333;
+    margin-top: 15px
+}
+
+#footer .footer-top h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000;
+  position: relative;
+  padding-bottom: 12px;
+     font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+#footer .footer-top .footer-links {
+  margin-bottom: 30px;
+}
+
+#footer .footer-top .footer-links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#footer .footer-top .footer-links ul i {
+  padding-right: 2px;
+  color: #4d4d4d;
+  font-size: 18px;
+  line-height: 1;
+}
+
+#footer .footer-top .footer-links ul li {
+  padding: 8px 0;
+  display: flex;
+  align-items: center;
+}
+
+#footer .footer-top .footer-links ul li:first-child {
+  padding-top: 0;
+}
+
+#footer .footer-top .footer-links ul a {
+  color: #333;
+  transition: 0.3s;
+  display: inline-block;
+  line-height: 1;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+#footer .footer-top .footer-links ul a:hover {
+  text-decoration: none;
+  color: #FFF;
+}
+
+#footer .footer-newsletter {
+  font-size: 15px;
+}
+
+#footer .footer-newsletter h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #000;
+  position: relative;
+  padding-bottom: 0px;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+#footer .footer-newsletter p {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333;
+  position: relative;
+  padding-bottom: 0px;
+  font-family: 'Sofia Sans Condensed', sans-serif;
+}
+
+#footer .footer-newsletter form {
+  background: #fff;
+  padding: 6px 10px;
+  position: relative;
+  border-radius: 4px;
+  text-align: left;
+  border: 1px solid #;
+}
+
+#footer .footer-newsletter form input[type=email] {
+  border: 0;
+  padding: 4px 8px;
+  width: calc(100% - 100px);
+}
+
+#footer .footer-newsletter form input[type=submit] {
+  position: absolute;
+  top: 0;
+  right: -2px;
+  bottom: 0;
+  border: 0;
+  background: none;
+  font-size: 16px;
+  padding: 0 20px 2px 20px;
+  background: #666;
+  color: #f2f2f2;
+  transition: 0.3s;
+  border-radius: 0 4px 4px 0;
+  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+#footer .footer-newsletter form input[type=submit]:hover {
+  background: #333;
+}
+
+#footer .credits {
+  padding-top: 5px;
+  font-size: 13px;
+  color: #444444;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #666;
+  color: #f2f2f2;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #666;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer img{
+ max-height: 30px;
+}
+
+.copyright p {
+   color: #000; 
+    margin: 15px 0px 0px 0px;
+    font-size: 13PX;
+}
+
+#footer .container d-md-flex py-4 {
+    background-color: #333
+}
+
+#footer{
+  background: linear-gradient(to bottom right, #EDB829 , #F6D000 ); 
+}
